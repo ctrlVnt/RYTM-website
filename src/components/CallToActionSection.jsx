@@ -62,7 +62,7 @@ const CallToActionSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a href="https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm">
-              <img className="w-48 h-auto" src="../public/play_badge.png" />
+              <img className="w-48 h-auto" src="https://rytmapp.netlify.app/play_badge.png" />
             </a>
           </motion.div>
 
@@ -82,7 +82,7 @@ const CallToActionSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a href="https://github.com/ctrlVnt/Real-YT-Music">
-              <img src="../public/github.png" className="w-48 h-auto" />
+              <img src="https://rytmapp.netlify.app/github.png" className="w-48 h-auto" />
             </a>
           </motion.div>
         </motion.div>

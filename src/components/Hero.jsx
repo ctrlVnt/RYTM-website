@@ -58,7 +58,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://rytmapp.netlify.app/public/Cover.png)',
+          backgroundImage: 'url(https://rytmapp.netlify.app/Cover.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
