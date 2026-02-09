@@ -33,12 +33,23 @@ const CallToActionSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Animated rotating gradient background */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 animate-gradient-rotate"
+          style={{
+            background: 'linear-gradient(135deg, #0a0a0a 0%, #4a0000 20%, #1a1a1a 40%, #8b0000 60%, #2a0000 80%, #0a0a0a 100%)',
+            backgroundSize: '400% 400%',
+          }}
+        />
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewpWort={{ once: true }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
@@ -62,7 +73,7 @@ const CallToActionSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a href="https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm">
-              <img className="w-48 h-auto" src="https://rytmapp.netlify.app/play_badge.png" />
+              <img className="w-48 h-auto" src="https://rytmapp.netlify.app/play_badge.png" alt="Get it on Google Play" />
             </a>
           </motion.div>
 
@@ -72,7 +83,7 @@ const CallToActionSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a href="https://www.buymeacoffee.com/v3ntuz">
-              <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=v3ntuz&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" />
+              <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=v3ntuz&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" />
             </a>
           </motion.div>
           
@@ -82,7 +93,7 @@ const CallToActionSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a href="https://github.com/ctrlVnt/Real-YT-Music">
-              <img src="https://rytmapp.netlify.app/github.png" className="w-48 h-auto" />
+              <img src="https://rytmapp.netlify.app/github.png" className="w-48 h-auto" alt="Contribute on GitHub" />
             </a>
           </motion.div>
         </motion.div>
