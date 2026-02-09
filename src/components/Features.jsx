@@ -8,28 +8,28 @@ const Features = () => {
       icon: Archive,
       title: "Import Playlists",
       description: "Easily import your existing YouTube playlists and keep all your favorite content organized in one place.",
-      image: "/features/create-playlist.jpg",
+      image: "/features/create-playlist.png",
       delay: 0
     },
     {
       icon: Play,
       title: "Ad-Free Viewing",
       description: "Enjoy your favorite YouTube videos without any interruptions from ads. Pure, uninterrupted entertainment every time.",
-      image: "/features/no-ads.jpg",
+      image: "/features/no-ads.png",
       delay: 0.2
     },
     {
       icon: Moon,
       title: "Sleep Mode",
       description: "Set a timer and drift off to your favorite content. The app automatically stops playback after your chosen time.",
-      image: "/features/sleep-mode.jpg",
+      image: "/features/sleep-mode.png",
       delay: 0.4
     },
     {
       icon: PictureInPicture,
       title: "Picture-in-Picture",
       description: "Watch videos in a floating window while you browse, work, or multitask. Your video stays with you wherever you go.",
-      image: "/features/pip-mode.jpg",
+      image: "/features/pip-mode.png",
       delay: 0.6
     }
   ];

@@ -2,6 +2,9 @@
 
 Official landing page for **Real YT Music (RYTM)** - a lightweight and feature-rich YouTube music player.
 
+
+![Hero Section](screenshots/hero-section.png)
+
 🌐 **Live Site**: [rytmapp.netlify.app](https://rytmapp.netlify.app)
 
 ## 📱 About RYTM
@@ -17,13 +20,6 @@ Real YT Music (RYTM) is a lightweight and versatile YouTube-based music app desi
 
 This website serves as the official landing page, showcasing the app's capabilities and providing download links.
 
-## 🖼️ Preview
-
-### Hero Section
-![Hero Section](screenshots/hero-section.png)
-
-### Features Showcase
-![Features Section](screenshots/features-section.png)
 
 ## 🚀 Getting Started
 

@@ -13,15 +13,15 @@ const FeatureCard = ({ icon: Icon, title, description, image, delay = 0 }) => {
         type: "spring",
         stiffness: 100
       }}
-      className="duration-300 group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col"
+      className="duration-300 group rounded-2xl overflow-hidden flex flex-col"
     >
       {/* App Screenshot */}
       {image && (
-        <div className="relative w-full h-72 overflow-hidden bg-gray-100">
+        <div className="relative overflow-hidden bg-gray-100">
           <img 
             src={image} 
             alt={title}
-            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            className="object-contain group-hover:scale-105 transition-transform duration-500"
           />
         </div>
       )}
