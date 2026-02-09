@@ -21,7 +21,6 @@ const Footer = () => {
             <a
               href="https://riccardoventurini.dev/privacy/rytm"
               className="text-gray-400 hover:text-white transition-colors duration-200"
-              onClick={(e) => e.preventDefault()}
             >
               Privacy Policy
             </a>

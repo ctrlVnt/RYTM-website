@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const FeatureCard = ({ icon: Icon, title, description, delay = 0 }) => {
+const FeatureCard = ({ icon: Icon, title, description, image, delay = 0 }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -13,22 +13,35 @@ const FeatureCard = ({ icon: Icon, title, description, delay = 0 }) => {
         type: "spring",
         stiffness: 100
       }}
-      className="duration-300 p-8 group"
+      className="duration-300 group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col"
     >
-      <motion.div
-        className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center mb-6 duration-300"
-        transition={{ duration: 0.5 }}
-      >
-        <Icon className="w-8 h-8 text-white" />
-      </motion.div>
+      {/* App Screenshot */}
+      {image && (
+        <div className="relative w-full h-72 overflow-hidden bg-gray-100">
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      )}
 
-      <h3 className="text-2xl font-bold text-gray-900 mb-3 transition-colors duration-300">
-        {title}
-      </h3>
+      <div className="p-6 flex-1 flex flex-col">
+        <motion.div
+          className="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110"
+          transition={{ duration: 0.3 }}
+        >
+          <Icon className="w-7 h-7 text-white" />
+        </motion.div>
 
-      <p className="text-gray-600 leading-relaxed">
-        {description}
-      </p>
+        <h3 className="text-xl font-bold text-gray-900 mb-3">
+          {title}
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed text-sm">
+          {description}
+        </p>
+      </div>
     </motion.div>
   );
 };
