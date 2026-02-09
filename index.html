@@ -1,13 +1,49 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/x-icon" href="/public/favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RYTM - Ad-free YouTube Player</title>
-	</head>
-	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>RYTM | Ad-free YouTube Player & Minimalist Music Streamer</title>
+        <meta name="description" content="Experience YouTube without interruptions. RYTM is a sleek, ad-free YouTube player designed for a distraction-free listening and viewing experience." />
+        <meta name="keywords" content="YouTube player, ad-free YouTube, minimalist music player, distraction-free video, RYTM player" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rytmapp.netlify.app" />
+        <meta property="og:title" content="RYTM - Ad-free YouTube Player" />
+        <meta property="og:description" content="Stream your favorite YouTube content without ads in a minimalist interface." />
+        <meta property="og:image" content="https://rytmapp.netlify.app/Cover.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="RYTM - Ad-free YouTube Player" />
+        <meta name="twitter:description" content="Minimalist, ad-free YouTube streaming." />
+
+        <link rel="canonical" href="https://rytmapp.netlify.app/" />
+
+		<script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "RYTM",
+          "operatingSystem": "Android",
+          "applicationCategory": "MultimediaApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EURO"
+          },
+          "description": "A minimalist, ad-free YouTube player for an uninterrupted music and video experience."
+        }
+        </script>
+    </head>
+    <body>
+        <noscript>
+            <h1>RYTM - Ad-free YouTube Player</h1>
+            <p>RYTM is a minimalist web application that allows you to watch YouTube videos without ads. Please enable JavaScript to use the player.</p>
+        </noscript>
+
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>

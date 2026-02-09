@@ -45,8 +45,7 @@ const Hero = () => {
     animate: {
       y: [0, -20, 0],
       transition: {
-        duration: 3,
-        repeat: Infinity,
+        duration: 1,
         ease: "easeInOut"
       }
     }
@@ -117,6 +116,14 @@ const Hero = () => {
         >
           Ad-free YouTube watching, your way
         </motion.p>
+        <motion.a 
+          variants={taglineVariants}
+          initial="hidden"
+          animate="visible"
+          className="mt-8 inline-block text-white px-6 py-3"
+          href="https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm">
+            <img className="w-48 h-auto" src="https://rytmapp.netlify.app/play_badge.png" />
+          </motion.a>
       </motion.div>
     </section>
   );
